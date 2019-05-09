@@ -5,7 +5,14 @@ library(billboarder)
 library(waypointer)
 library(tidyverse)
 
-# source('functions.R')
+# creates 100vh div
+longdiv <- function(...){
+    div(
+        ...,
+        class = "container",
+        style = "height:100vh;"
+    )
+}
 
 OFFSET <- '50%'
 ANIMATION <- 'slideInUp'
